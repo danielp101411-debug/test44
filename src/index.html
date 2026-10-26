@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dusk Arena</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+/* @inline style.css */
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="hud">
+    <div class="tl"><div id="waveTxt">Wave 1</div><div id="scoreTxt">0</div></div>
+    <div class="bl"><div class="hpbar" id="hpBar"><i id="hpFill"></i></div><span id="hpTxt">100</span></div>
+    <div class="br"><span id="ammoTxt">24</span><small>/ 24</small><div id="reloadTxt"></div></div>
+    <div id="cross"></div>
+    <div id="hitmark"></div>
+    <div id="banner"></div>
+    <div id="vignette"></div>
+  </div>
+  <div id="touch">
+    <div id="stick"><i id="knob"></i></div>
+    <button class="tbtn" id="fireBtn" aria-label="Fire">Fire</button>
+    <button class="tbtn" id="jumpBtn" aria-label="Jump">Jump</button>
+  </div>
+  <div class="overlay" id="overlay">
+    <div class="panel" role="dialog" aria-labelledby="ovTitle">
+      <h1 id="ovTitle">Dusk Arena</h1>
+      <p id="ovText">The sun is going down and the drones are coming over the walls. Hold the yard for as many waves as you can.</p>
+      <div class="stats" id="ovStats" hidden></div>
+      <button id="ovBtn">Start</button>
+      <dl class="keys desk-only">
+        <dt>W A S D</dt><dd>Move</dd>
+        <dt>Mouse</dt><dd>Look</dd>
+        <dt>Click</dt><dd>Shoot (hold for auto)</dd>
+        <dt>Space</dt><dd>Jump — crates are climbable</dd>
+        <dt>Shift</dt><dd>Sprint</dd>
+        <dt>R</dt><dd>Reload</dd>
+        <dt>Esc</dt><dd>Pause</dd>
+      </dl>
+      <dl class="keys touch-only">
+        <dt>Left thumb</dt><dd>Move</dd>
+        <dt>Right thumb</dt><dd>Drag to look</dd>
+        <dt>Buttons</dt><dd>Fire and jump</dd>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// @inline logic.js
+</script>
+<script>
+// @inline game.js
+</script>
+</body>
+</html>
